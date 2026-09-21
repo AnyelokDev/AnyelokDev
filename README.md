@@ -1,12 +1,14 @@
 ## Miguel Angel Peralta Cano
 
 **Ingeniería de Software** — Universidad de La Salle
-**Técnico en Servicios de Seguridad Informática** — Politécnico Grancolombiano / Minuto de Dios *(etapa práctica)*
+**Técnico en Servicios de Seguridad Informática** — Fundación Politécnico Minuto de Dios (TECMD) *(etapa práctica)*
 
-Trabajo entre el desarrollo de software y la seguridad informática. Mis proyectos van de
-sistemas en Java a laboratorios de detección de intrusos, análisis forense de logs y hardening
-de bases de datos, y todos están documentados con su procedimiento, evidencia y hallazgos —
-incluidos los problemas que no estaban en el guion.
+Trabajo entre el desarrollo de software y la seguridad informática.
+
+Los proyectos de seguridad de este perfil son **trabajos del programa técnico en el TECMD**:
+laboratorios y auditorías con un alcance definido por la institución, no desarrollos propios.
+Lo que pongo yo en ellos es el rigor con que los documento — procedimiento, evidencia y
+hallazgos, incluidos los fallos que no estaban en el guion y lo que se aprendió de ellos.
 
 > **Busco práctica o pasantía en ciberseguridad** (pentesting, blue team, análisis forense) — Bogotá o remoto.
 
@@ -32,6 +34,8 @@ incluidos los problemas que no estaban en el guion.
 
 ### Seguridad informática
 
+*Trabajos académicos del programa técnico (TECMD).*
+
 | Proyecto | Qué resuelve |
 |---|---|
 | **[snort-ids-ips-kali-linux](https://github.com/AnyelokDev/snort-ids-ips-kali-linux)** | Snort 3 como IDS/IPS sobre Kali: migración de `snort.conf` a `snort.lua`, modo inline con NFQUEUE y bloqueo de tráfico saliente. Incluye cuatro fallos no documentados y su análisis. |
@@ -42,6 +46,8 @@ incluidos los problemas que no estaban en el guion.
 
 ### Desarrollo
 
+*Trabajos académicos del TECMD y de la Universidad de La Salle.*
+
 | Proyecto | Qué resuelve |
 |---|---|
 | **[nublus-fleet-manager](https://github.com/AnyelokDev/nublus-fleet-manager)** | Gestión de flotas con control de vencimiento de documentos y alertas por estado. JavaScript + `localStorage`. |
@@ -49,7 +55,7 @@ incluidos los problemas que no estaban en el guion.
 | **[java-utility-billing-system](https://github.com/AnyelokDev/java-utility-billing-system)** | Liquidación de servicios públicos aplicando herencia y polimorfismo por estrato socioeconómico. |
 | **[polyglot-matrix-toolkit](https://github.com/AnyelokDev/polyglot-matrix-toolkit)** | El mismo taller de vectores y matrices resuelto en Python (Tkinter), C# (WinForms) y Java (Swing). |
 | **[dispatch-warehouse-db](https://github.com/AnyelokDev/dispatch-warehouse-db)** | Base de datos relacional de despachos: esquema, consultas avanzadas y gestión de privilegios. |
-| **[urbanstyle-landing-page](https://github.com/AnyelokDev/urbanstyle-landing-page)** | Landing page responsive con Tailwind CSS y exportación de la vista a PDF. |
+| **[urbanstyle-landing-page](https://github.com/AnyelokDev/urbanstyle-landing-page)** | Landing page responsive con Tailwind CSS, tema oscuro y hoja de estilos de impresión. |
 
 ---
 
