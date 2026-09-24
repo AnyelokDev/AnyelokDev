@@ -50,19 +50,18 @@ informe técnico con 22 evidencias y guion de demo reproducible.
 
 ### Seguridad informática
 
-*Trabajos académicos del programa técnico (TECMD).*
-
 | Proyecto | Qué resuelve |
 |---|---|
+| **[soc-purple-team-wazuh](https://github.com/AnyelokDev/soc-purple-team-wazuh)** | Dashboard en vivo sobre alertas reales de Wazuh con cuadrícula MITRE ATT&CK por SSE. El hueco T1136 se cierra con una regla custom durante la demo y la cobertura pasa de 71 % a 100 %. |
 | **[snort-ids-ips-kali-linux](https://github.com/AnyelokDev/snort-ids-ips-kali-linux)** | Snort 3 como IDS/IPS sobre Kali: migración de `snort.conf` a `snort.lua`, modo inline con NFQUEUE y bloqueo de tráfico saliente. Incluye cuatro fallos no documentados y su análisis. |
 | **[nmap-security-audit](https://github.com/AnyelokDev/nmap-security-audit)** | Auditoría perimetral con Nmap: script Bash de automatización y reportes HTML de puertos TCP/UDP. |
 | **[linux-forensics-incident-response](https://github.com/AnyelokDev/linux-forensics-incident-response)** | Análisis forense de logs en Linux y playbook de respuesta a incidentes en 5 fases para malware USB y DDoS. |
 | **[postgresql-hardening-metrics](https://github.com/AnyelokDev/postgresql-hardening-metrics)** | Hardening de PostgreSQL y 5 KPIs de seguridad con su formulación matemática. |
 | **[nagios-snmp-monitoring](https://github.com/AnyelokDev/nagios-snmp-monitoring)** | Monitoreo de red LAN con Nagios y SNMP: disponibilidad de hosts y métricas vía MIBs y OIDs. |
 
-### Desarrollo
+<sup>Salvo el primero, que es propio, son trabajos del programa técnico (TECMD).</sup>
 
-*Trabajos académicos del TECMD y de la Universidad de La Salle.*
+### Desarrollo
 
 | Proyecto | Qué resuelve |
 |---|---|
@@ -72,6 +71,8 @@ informe técnico con 22 evidencias y guion de demo reproducible.
 | **[polyglot-matrix-toolkit](https://github.com/AnyelokDev/polyglot-matrix-toolkit)** | El mismo taller de vectores y matrices resuelto en Python (Tkinter), C# (WinForms) y Java (Swing). |
 | **[dispatch-warehouse-db](https://github.com/AnyelokDev/dispatch-warehouse-db)** | Base de datos relacional de despachos: esquema, consultas avanzadas y gestión de privilegios. |
 | **[urbanstyle-landing-page](https://github.com/AnyelokDev/urbanstyle-landing-page)** | Landing page responsive con Tailwind CSS, tema oscuro y hoja de estilos de impresión. |
+
+<sup>Trabajos académicos del TECMD y de la Universidad de La Salle.</sup>
 
 ---
 
