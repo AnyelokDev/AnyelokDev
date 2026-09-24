@@ -5,12 +5,28 @@
 
 Trabajo entre el desarrollo de software y la seguridad informática.
 
-Los proyectos de seguridad de este perfil son **trabajos del programa técnico en el TECMD**:
-laboratorios y auditorías con un alcance definido por la institución, no desarrollos propios.
-Lo que pongo yo en ellos es el rigor con que los documento — procedimiento, evidencia y
-hallazgos, incluidos los fallos que no estaban en el guion y lo que se aprendió de ellos.
+Casi todo lo que hay aquí nació en el programa técnico del TECMD: laboratorios y auditorías
+con un alcance definido por la institución. Lo que pongo yo en ellos es el rigor con que los
+documento — procedimiento, evidencia y hallazgos, incluidos los fallos que no estaban en el
+guion y lo que se aprendió de ellos. El SOC purple team de abajo es la excepción: se construyó
+fuera del aula, en un *build day*, y es de donde más he aprendido.
 
 > **Busco práctica o pasantía en ciberseguridad** (pentesting, blue team, análisis forense) — Bogotá o remoto.
+
+---
+
+### Proyecto destacado · SOC Purple Team en vivo
+
+**[soc-purple-team-wazuh](https://github.com/AnyelokDev/soc-purple-team-wazuh)** — dashboard web
+que lee alertas **reales** de Wazuh y pinta una cuadrícula MITRE ATT&CK que se actualiza en vivo
+por SSE. Se lanzan ataques, unas técnicas se detectan y otras no; el hueco de **T1136 (Create
+Account)** se cierra escribiendo una regla custom durante la demo y la cobertura pasa de 71 % a
+100 %. Eso es **detección como código**.
+
+[![Panel SOC purple team con cuadrícula MITRE ATT&CK en vivo](https://raw.githubusercontent.com/AnyelokDev/soc-purple-team-wazuh/main/evidencia/08_panel_71_flujo_completo.png)](https://github.com/AnyelokDev/soc-purple-team-wazuh)
+
+Backend en Python de solo librería estándar, reglas y decoders custom de Wazuh mapeados a ATT&CK,
+informe técnico con 22 evidencias y guion de demo reproducible.
 
 ---
 
@@ -62,6 +78,7 @@ hallazgos, incluidos los fallos que no estaban en el guion y lo que se aprendió
 ### Ahora mismo
 
 - Cursando la etapa práctica del Técnico en Servicios de Seguridad Informática.
+- Ampliando el panel del SOC purple team con más técnicas de ATT&CK.
 - Practicando en máquinas de **Hack The Box** para afianzar pentesting.
 - Profundizando en análisis forense y operaciones de blue team.
 
