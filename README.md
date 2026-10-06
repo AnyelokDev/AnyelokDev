@@ -8,14 +8,17 @@ Trabajo entre el desarrollo de software y la seguridad informática.
 Casi todo lo que hay aquí nació en el programa técnico del TECMD: laboratorios y auditorías
 con un alcance definido por la institución. Lo que pongo yo en ellos es el rigor con que los
 documento — procedimiento, evidencia y hallazgos, incluidos los fallos que no estaban en el
-guion y lo que se aprendió de ellos. El SOC purple team de abajo es la excepción: se construyó
-fuera del aula, en un *build day*, y es de donde más he aprendido.
+guion y lo que se aprendió de ellos. Los dos proyectos destacados de abajo son la excepción:
+nacieron fuera del aula, en *build days*, y son de donde más he aprendido. Forman pareja —
+uno detecta el ataque, el otro te explica qué pasó.
 
 > **Busco práctica o pasantía en ciberseguridad** (pentesting, blue team, análisis forense) — Bogotá o remoto.
 
 ---
 
-### Proyecto destacado · SOC Purple Team en vivo
+### Proyectos destacados
+
+#### SOC Purple Team en vivo
 
 **[soc-purple-team-wazuh](https://github.com/AnyelokDev/soc-purple-team-wazuh)** — dashboard web
 que lee alertas **reales** de Wazuh y pinta una cuadrícula MITRE ATT&CK que se actualiza en vivo
@@ -27,6 +30,20 @@ Account)** se cierra escribiendo una regla custom durante la demo y la cobertura
 
 Backend en Python de solo librería estándar, reglas y decoders custom de Wazuh mapeados a ATT&CK,
 informe técnico con 22 evidencias y guion de demo reproducible.
+
+#### SOC Tutor
+
+**[soc-tutor](https://github.com/AnyelokDev/soc-tutor)** — herramienta defensiva que lee un
+`auth.log` de Linux y lo explica como un analista senior a uno junior: línea de tiempo, técnicas
+MITRE y playbook de respuesta. Un orquestador Opus clasifica y reparte el trabajo entre cuatro
+workers Sonnet en paralelo, y después revisa lo que devuelven y descarta lo que la evidencia no
+respalda. Cada afirmación cita la línea del log (`L#`) para poder verificarla.
+
+Lo que más trabajé es lo que no se ve: el log lo controla en parte el atacante, así que la
+evidencia viaja delimitada y las reglas del sistema la tratan como datos y nunca como
+instrucciones. El marcador de «requiere aprobación» de los comandos destructivos **lo impone el
+código**, no el modelo. 79 pruebas automatizadas con un cliente falso de la API, sin gastar
+créditos.
 
 ---
 
@@ -45,6 +62,8 @@ informe técnico con 22 evidencias y guion de demo reproducible.
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white)
 ![Snort](https://img.shields.io/badge/Snort_3-E5332A?style=flat&logo=snort&logoColor=white)
 ![Nagios](https://img.shields.io/badge/Nagios-CA2027?style=flat&logo=nagios&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-005C8A?style=flat&logo=wazuh&logoColor=white)
+![Claude API](https://img.shields.io/badge/Claude_API-D97757?style=flat&logo=anthropic&logoColor=white)
 
 ---
 
@@ -53,13 +72,14 @@ informe técnico con 22 evidencias y guion de demo reproducible.
 | Proyecto | Qué resuelve |
 |---|---|
 | **[soc-purple-team-wazuh](https://github.com/AnyelokDev/soc-purple-team-wazuh)** | Dashboard en vivo sobre alertas reales de Wazuh con cuadrícula MITRE ATT&CK por SSE. El hueco T1136 se cierra con una regla custom durante la demo y la cobertura pasa de 71 % a 100 %. |
+| **[soc-tutor](https://github.com/AnyelokDev/soc-tutor)** | Analiza un `auth.log` con un orquestador Opus y 4 workers Sonnet en paralelo, y lo explica en un dashboard: línea de tiempo, técnicas MITRE y playbook, con cada afirmación citando su línea del log. |
 | **[snort-ids-ips-kali-linux](https://github.com/AnyelokDev/snort-ids-ips-kali-linux)** | Snort 3 como IDS/IPS sobre Kali: migración de `snort.conf` a `snort.lua`, modo inline con NFQUEUE y bloqueo de tráfico saliente. Incluye cuatro fallos no documentados y su análisis. |
 | **[nmap-security-audit](https://github.com/AnyelokDev/nmap-security-audit)** | Auditoría perimetral con Nmap: script Bash de automatización y reportes HTML de puertos TCP/UDP. |
 | **[linux-forensics-incident-response](https://github.com/AnyelokDev/linux-forensics-incident-response)** | Análisis forense de logs en Linux y playbook de respuesta a incidentes en 5 fases para malware USB y DDoS. |
 | **[postgresql-hardening-metrics](https://github.com/AnyelokDev/postgresql-hardening-metrics)** | Hardening de PostgreSQL y 5 KPIs de seguridad con su formulación matemática. |
 | **[nagios-snmp-monitoring](https://github.com/AnyelokDev/nagios-snmp-monitoring)** | Monitoreo de red LAN con Nagios y SNMP: disponibilidad de hosts y métricas vía MIBs y OIDs. |
 
-<sup>Salvo el primero, que es propio, son trabajos del programa técnico (TECMD).</sup>
+<sup>Salvo los dos primeros, que son propios, son trabajos del programa técnico (TECMD).</sup>
 
 ### Desarrollo
 
